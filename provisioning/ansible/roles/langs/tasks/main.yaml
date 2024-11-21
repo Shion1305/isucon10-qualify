@@ -18,11 +18,11 @@
   become_user: isucon
   command: /home/isucon/.cargo/bin/rustup update stable
 
-- name: Install Deno v1.3.2
+- name: Install Deno v1.46.3
   become: yes
   become_user: isucon
   shell: |
-    curl -fsSL https://deno.land/x/install/install.sh | sh -s v1.3.2
+    curl -fsSL https://deno.land/x/install/install.sh | sh -s v1.46.3
 - name: Add PATH for deno
   become: yes
   become_user: isucon
